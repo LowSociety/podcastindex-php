@@ -1,0 +1,12 @@
+{
+    "name": "podcastindex/podcastindex-php",
+    "description": "A PHP wrapper for the PodcastIndex API.",
+    "autoload": {
+        "psr-4": {
+            "PodcastIndex\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
