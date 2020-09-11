@@ -32,14 +32,7 @@ class HttpClient
             $clientConfig[RequestOptions::HEADERS]?? []
         );
 
-        $this->client = new Client(
-            array_merge(
-                [
-                    'base_uri' => $this->getBaseUri(),
-                ],
-                $clientConfig
-            )
-        );
+        $this->client = new Client($clientConfig);
     }
     
     public function get(string $path, array $query = [], array $options = [])
