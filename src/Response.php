@@ -29,12 +29,12 @@ class Response
 
     public function code()
     {
-        return $this->reponse->getStatusCode();
+        return $this->response->getStatusCode();
     }
 
     public function reason()
     {
-        return $this->reponse->getReasonPhrase();
+        return $this->response->getReasonPhrase();
     }
 
     public function __call($method, $params)
